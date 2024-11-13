@@ -36,7 +36,7 @@ def adicionar_funcionario():
 def remover_funcionario():
     identificador = input("\nDigite o 'id' do funcionário: ")
     if len(identificador) > 0:
-        sql = f"DELETE FROM funcionarios WHERE id_funcionario='{identificador}'"
+        sql = f"DELETE FROM funcionarios WHERE id='{identificador}'"
     else:
         nome = input('\nDigite o nome do funcionário: ')
         contato = input('Digite o contato do funcionário: ')
