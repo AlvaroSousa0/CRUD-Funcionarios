@@ -53,7 +53,7 @@ def modificar_funcionario():
     identificador = input("\nDigite o 'id' do funcionário que deseja modificar: ")
     modifica = input('Digite um item que deseja modificar: ')
     novo_valor = input('Digite o que deseja colocar: ')
-    sql = f"UPDATE funcionarios SET '{modifica}'='{novo_valor}' WHERE id_funcionario='{identificador}'"
+    sql = f"UPDATE funcionarios SET '{modifica}'='{novo_valor}' WHERE id='{identificador}'"
     try:
         cursor = conexao.cursor()
         cursor.execute(sql)
